@@ -81,3 +81,10 @@ Outputs:
           Fn::GetAtt:
           - VPCStack
           - Outputs.VPCCIDR
+Outputs:
+  WebURL:
+    Description: "The web server URL"
+    Value:
+      Fn::GetAtt:
+      - WorkloadStack
+      - Outputs.URL
